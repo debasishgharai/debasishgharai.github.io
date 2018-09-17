@@ -1,4 +1,15 @@
 <h3>Hello World</h3>
+<link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
-alert(1);
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "4dcdddc2-fd35-499c-a3fb-15ef279a5ef5",
+      autoRegister: false,
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
 </script>
